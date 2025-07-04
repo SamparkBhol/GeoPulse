@@ -1,6 +1,6 @@
-rasterio
+rasterio==1.2.10
 shapely
 pandas
 Pillow
 requests
-scikit-image # for skimage.transform.resize
+scikit-image
