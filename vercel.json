@@ -14,10 +14,7 @@
     "api/**/*.py": { 
       "runtime": "@vercel/python",
       "memory": 1024, 
-      "maxDuration": 10,
-      "env": {
-        "GDAL_VERSION": "3.6.2"
-      }
+      "maxDuration": 10
     }
   },
   "routes": [

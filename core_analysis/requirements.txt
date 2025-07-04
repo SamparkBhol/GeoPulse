@@ -1,0 +1,6 @@
+rasterio==1.2.10
+shapely
+pandas
+Pillow
+requests
+scikit-image
