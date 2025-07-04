@@ -2,10 +2,7 @@
   "builds": [
     {
       "src": "api/*.py",
-      "use": "@vercel/python",
-      "env": {
-        "GDAL_VERSION": "3.6.2"
-      }
+      "use": "@vercel/python"
     },
     {
       "src": "frontend/package.json",
@@ -13,6 +10,16 @@
       "config": { "distDir": "dist" }
     }
   ],
+  "functions": {
+    "api/**/*.py": { 
+      "runtime": "@vercel/python",
+      "memory": 1024, 
+      "maxDuration": 10,
+      "env": {
+        "GDAL_VERSION": "3.6.2"
+      }
+    }
+  },
   "routes": [
     {
       "src": "/api/search",
