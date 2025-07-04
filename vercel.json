@@ -5,9 +5,10 @@
       "use": "@vercel/python"
     },
     {
-      "src": "frontend/index.html",
+      "src": "frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "frontend/dist" }
+      "config": { "distDir": "dist" },
+      "root": "frontend"
     }
   ],
   "routes": [
