@@ -15,6 +15,16 @@ This application allows users to explore LULC changes over time, visualize land 
 -   **Serverless Architecture**: Python backend deployed as serverless functions on Vercel, consuming data from HuggingFace.
 -   **Modern Frontend**: Built with React, Vite, and designed for a smooth user experience.
 
+## Currently Supported Locations
+
+As of now, Geopulse supports Land Use Land Cover analysis for the following Indian states:
+
+*   **Uttar Pradesh** (`up`)
+*   **Maharashtra** (`mh`)
+*   **West Bengal** (`wb`)
+
+Analysis for other locations (both within India and internationally) requires sourcing and hosting the corresponding raster data, and potentially extending the geocoding logic. Please refer to the "Adding New Locations" section for more details.
+
 ## Technologies Used
 
 **Frontend:**
